@@ -1,1 +1,367 @@
 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap Blockchain Indonesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #5E35B1;
+            --secondary: #3949AB;
+            --accent: #7C4DFF;
+            --dark: #1A1A2E;
+            --light: #F1F1F6;
+        }
+        
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+        }
+        
+        .card-glass {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.36);
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background: var(--accent);
+        }
+        
+        .hover-scale {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-scale:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Hero Section -->
+    <header class="gradient-bg py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="flex justify-center mb-6">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/20e136ee-f183-4644-b0d1-1c072f19e71f.png" alt="Ilustrasi blockchain dengan ikon rantai digital berwarna ungu dan biru neon" class="rounded-xl shadow-2xl" />
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white">Roadmap Blockchain</h1>
+            <p class="text-xl md:text-2xl text-white opacity-90 max-w-3xl mx-auto">Panduan lengkap belajar teknologi blockchain dalam Bahasa Indonesia</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            <!-- Sidebar Navigation -->
+            <div class="lg:col-span-1">
+                <div class="card-glass p-6 sticky top-8">
+                    <h2 class="text-xl font-bold mb-4 text-white">Daftar Materi</h2>
+                    <nav>
+                        <ul class="space-y-2">
+                            <li><a href="#dasar" class="text-white hover:text-accent transition">Dasar-Dasar Blockchain</a></li>
+                            <li><a href="#platform" class="text-white hover:text-accent transition">Platform Blockchain</a></li>
+                            <li><a href="#pengembangan" class="text-white hover:text-accent transition">Pengembangan Blockchain</a></li>
+                            <li><a href="#scaling" class="text-white hover:text-accent transition">Scaling & Solusi Lapisan 2</a></li>
+                            <li><a href="#keamanan" class="text-white hover:text-accent transition">Keamanan Blockchain</a></li>
+                            <li><a href="#masa-depan" class="text-white hover:text-accent transition">Masa Depan Blockchain</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Roadmap Content -->
+            <div class="lg:col-span-3 space-y-8">
+                <!-- Dasar-Dasar Blockchain -->
+                <section id="dasar" class="card-glass p-8 hover-scale">
+                    <div class="flex items-center mb-6">
+                        <div class="gradient-bg p-3 rounded-lg mr-4">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/01e815cd-a00a-4577-8b69-34c2f22415c4.png" alt="Ikon dasar blockchain berupa kubus transparan dengan simbol rantai di dalamnya" />
+                        </div>
+                        <h2 class="text-2xl font-bold text-white">Dasar-Dasar Blockchain</h2>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="pl-6 relative timeline-item">
+                            <h3 class="text-xl font-semibold text-white">Pengenalan Blockchain</h3>
+                            <ul class="mt-2 space-y-2 text-gray-300">
+                                <li>Apa itu teknologi blockchain?</li>
+                                <li>Sejarah dan evolusi blockchain</li>
+                                <li>Konsep desentralisasi</li>
+                                <li>Perbedaan dengan database tradisional</li>
+                            </ul>
+                        </div>
+                        <div class="pl-6 relative timeline-item">
+                            <h3 class="text-xl font-semibold text-white">Kriptografi Dasar</h3>
+                            <ul class="mt-2 space-y-2 text-gray-300">
+                                <li>Hash functions dan propertinya</li>
+                                <li>Digital signatures</li>
+                                <li>Kriptografi kunci publik/privat</li>
+                                <li>Proof of Work vs Proof of Stake</li>
+                            </ul>
+                        </div>
+                        <div class="pl-6 relative timeline-item">
+                            <h3 class="text-xl font-semibold text-white">Struktur Blockchain</h3>
+                            <ul class="mt-2 space-y-2 text-gray-300">
+                                <li>Block dan struktur chain</li>
+                                <li>Mekanisme konsensus</li>
+                                <li>Smart contracts</li>
+                                <li>Node dan jaringan peer-to-peer</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Platform Blockchain -->
+                <section id="platform" class="card-glass p-8 hover-scale">
+                    <div class="flex items-center mb-6">
+                        <div class="gradient-bg p-3 rounded-lg mr-4">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/324d4d4e-8247-4968-8956-139125c40c70.png" alt="Ikon platform blockchain berbentuk kubus jaringan dengan node yang saling terhubung" />
+                        </div>
+                        <h2 class="text-2xl font-bold text-white">Platform Blockchain</h2>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="pl-6 relative timeline-item">
+                            <h3 class="text-xl font-semibold text-white">Bitcoin</h3>
+                            <ul class="mt-2 space-y-2 text-gray-300">
+                                <li>Arsitektur jaringan Bitcoin</li>
+                                <li>Protokol Bitcoin</li>
+                                <li>Penambangan Bitcoin</li>
+                                <li>Dompet Bitcoin</li>
+                            </ul>
+                        </div>
+                        <div class="pl-6 relative timeline-item">
+                            <h3 class="text-xl font-semibold text-white">Ethereum</h3>
+                            <ul class="mt-2 space-y-2 text-gray-300">
+                                <li>EVM (Ethereum Virtual Machine)</li>
+                                <li>Gas dan mekanisme fee</li>
+                                <li>Standar token (ERC-20, ERC-721)</li>
+                                <li>Ethereum 2.0 dan transisi ke PoS</li>
+                            </ul>
+                        </div>
+                        <div class="pl-6 relative timeline-item">
+                            <h3 class="text-xl font-semibold text-white">Blockchain Alternatif</h3>
+                            <ul class="mt-2 space-y-2 text-gray-300">
+                                <li>Hyperledger</li>
+                                <li>Binance Smart Chain</li>
+                                <li>Solana</li>
+                                <li>Polkadot</li>
+                                <li>Cardano</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Pengembangan Blockchain -->
+                <section id="pengembangan" class="card-glass p-8 hover-scale">
+                    <div class="flex items-center mb-6">
+                        <div class="gradient-bg p-3 rounded-lg mr-4">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e5459331-085f-47f3-a9bf-a14a9ffb3ebe.png" alt="Ikon pengembangan blockchain berupa terminal kode dengan simbol smart contract" />
+                        </div>
+                        <h2 class="text-2xl font-bold text-white">Pengembangan Blockchain</h2>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="pl-6 relative timeline-item">
+                            <h3 class="text-xl font-semibold text-white">Bahasa Pemrograman</h3>
+                            <ul class="mt-2 space-y-2 text-gray-300">
+                                <li>Solidity (untuk Ethereum)</li>
+                                <li>Rust (untuk Solana, Polkadot)</li>
+                                <li>Go (untuk Hyperledger, Ethereum)</li>
+                                <li>Vyper (alternatif Solidity)</li>
+                            </ul>
+                        </div>
+                        <div class="pl-6 relative timeline-item">
+                            <h3 class="text-xl font-semibold text-white">Alat Pengembangan</h3>
+                            <ul class="mt-2 space-y-2 text-gray-300">
+                                <li>Truffle Suite</li>
+                                <li>Hardhat</li>
+                                <li>Remix IDE</li>
+                                <li>Ganache</li>
+                                <li>Metamask</li>
+                            </ul>
+                        </div>
+                        <div class="pl-6 relative timeline-item">
+                            <h3 class="text-xl font-semibold text-white">Pola Desain Smart Contract</h3>
+                            <ul class="mt-2 space-y-2 text-gray-300">
+                                <li>Factory Pattern</li>
+                                <li>Proxy Pattern</li>
+                                <li>Oracle Pattern</li>
+                                <li>Circuit Breaker Pattern</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Scaling & Solusi Lapisan 2 -->
+                <section id="scaling" class="card-glass p-8 hover-scale">
+                    <div class="flex items-center mb-6">
+                        <div class="gradient-bg p-3 rounded-lg mr-4">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ca8e940d-c006-464c-9921-e40ef3ffc2eb.png" alt="Ikon scaling blockchain berupa grafik pertumbuhan di atas layer blockchain" />
+                        </div>
+                        <h2 class="text-2xl font-bold text-white">Scaling & Solusi Lapisan 2</h2>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="pl-6 relative timeline-item">
+                            <h3 class="text-xl font-semibold text-white">Solusi Scaling Blockchain</h3>
+                            <ul class="mt-2 space-y-2 text-gray-300">
+                                <li>Sharding</li>
+                                <li>Sidechains</li>
+                                <li>State channels</li>
+                                <li>Optimistic rollups</li>
+                                <li>ZK-rollups</li>
+                            </ul>
+                        </div>
+                        <div class="pl-6 relative timeline-item">
+                            <h3 class="text-xl font-semibold text-white">Implementasi Lapisan 2</h3>
+                            <ul class="mt-2 space-y-2 text-gray-300">
+                                <li>Polygon</li>
+                                <li>Arbitrum</li>
+                                <li>Optimism</li>
+                                <li>Starknet</li>
+                                <li>zkSync</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Keamanan Blockchain -->
+                <section id="keamanan" class="card-glass p-8 hover-scale">
+                    <div class="flex items-center mb-6">
+                        <div class="gradient-bg p-3 rounded-lg mr-4">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1f6d8099-93ab-437e-8e02-ece2a580d2e5.png" alt="Ikon keamanan blockchain berupa perisai dengan simbol kunci digital" />
+                        </div>
+                        <h2 class="text-2xl font-bold text-white">Keamanan Blockchain</h2>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="pl-6 relative timeline-item">
+                            <h3 class="text-xl font-semibold text-white">Keamanan Smart Contract</h3>
+                            <ul class="mt-2 space-y-2 text-gray-300">
+                                <li>Vulnerabilitas umum smart contract</li>
+                                <li>Serangan reentrancy</li>
+                                <li>Integer overflow/underflow</li>
+                                <li>Oracle manipulation</li>
+                            </ul>
+                        </div>
+                        <div class="pl-6 relative timeline-item">
+                            <h3 class="text-xl font-semibold text-white">Alat Audit Keamanan</h3>
+                            <ul class="mt-2 space-y-2 text-gray-300">
+                                <li>Slither</li>
+                                <li>Mythril</li>
+                                <li>Securify</li>
+                                <li>Automated formal verification</li>
+                            </ul>
+                        </div>
+                        <div class="pl-6 relative timeline-item">
+                            <h3 class="text-xl font-semibold text-white">Best Practices</h3>
+                            <ul class="mt-2 space-y-2 text-gray-300">
+                                <li>Penulisan kode defensif</li>
+                                <li>Verifikasi formal</li>
+                                <li>Bug bounty programs</li>
+                                <li>Multi-signature wallets</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Masa Depan Blockchain -->
+                <section id="masa-depan" class="card-glass p-8 hover-scale">
+                    <div class="flex items-center mb-6">
+                        <div class="gradient-bg p-3 rounded-lg mr-4">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e94f022c-7c59-43b4-bc1c-f3c0b59b10d6.png" alt="Ikon masa depan blockchain berupa kristal futuristik dengan simbol blockchain di dalamnya" />
+                        </div>
+                        <h2 class="text-2xl font-bold text-white">Masa Depan Blockchain</h2>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="pl-6 relative timeline-item">
+                            <h3 class="text-xl font-semibold text-white">Teknologi Emerging</h3>
+                            <ul class="mt-2 space-y-2 text-gray-300">
+                                <li>Decentralized identity</li>
+                                <li>Zero-knowledge proofs</li>
+                                <li>Tokenization of real-world assets</li>
+                                <li>Web3 dan internet terdesentralisasi</li>
+                            </ul>
+                        </div>
+                        <div class="pl-6 relative timeline-item">
+                            <h3 class="text-xl font-semibold text-white">Penggunaan Kasus Industri</h3>
+                            <ul class="mt-2 space-y-2 text-gray-300">
+                                <li>DeFi (Decentralized Finance)</li>
+                                <li>NFT dan digital ownership</li>
+                                <li>Supply chain management</li>
+                                <li>Voting systems</li>
+                                <li>Healthcare records</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="gradient-bg py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-white opacity-90">Mau kam pelajari atau kada terserah kam soalnya emang butuh desikasi yang tinggi pang</p>
+            <p class="mt-2 text-white opacity-70"></p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Animation on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fadeIn');
+                }
+            });
+        }, {threshold: 0.1});
+
+        document.querySelectorAll('.hover-scale').forEach((el) => {
+            observer.observe(el);
+        });
+
+        // Add animation class
+        const style = document.createElement('style');
+        style.textContent = `
+            .animate-fadeIn {
+                animation: fadeIn 0.8s ease forwards;
+            }
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
